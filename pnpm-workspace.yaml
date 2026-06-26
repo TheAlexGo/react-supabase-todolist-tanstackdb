@@ -1,0 +1,15 @@
+shellEmulator: true
+
+trustPolicy: no-downgrade
+
+packages:
+  - .
+allowBuilds:
+  '@journeyapps/wa-sqlite': true
+  '@swc/core': true
+  esbuild: true
+  yarn: true
+
+# Не проверять версии, опубликованные более 30 дней назад.
+# Значение задаётся в минутах.
+trustPolicyIgnoreAfter: 43200
